@@ -22,7 +22,7 @@ def find_numbers_with_sum(numbers: List[int], sum: int) -> (int, int):
 
     By "closing in" on the range of numbers, we don't end up trying every possible pair
     of numbers in the list, with a complexity of O(n^2). This algorithm runs with a
-    complexity of O(nlog(n)) instead*. (* = it's been a while since I've done Big-O
+    complexity of O(n) instead*. (* = it's been a while since I've done Big-O
     notation, feel free to correct me with a pull request)
     """
     start_num = 0
@@ -58,7 +58,7 @@ def find_three_numbers_with_sum(numbers: List[int], sum: int) -> (int, int):
 
     By "closing in" on the range of numbers, we don't end up trying every possible pair
     of numbers in the list, with a complexity of O(n^3). This algorithm runs with a
-    complexity of O(n*log^2(n)) instead*. (* = it's been a while since I've done Big-O
+    complexity of O(n^2) instead*. (* = it's been a while since I've done Big-O
     notation, feel free to correct me with a pull request)
     """
     end_num = len(numbers) - 1
