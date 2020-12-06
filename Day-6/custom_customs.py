@@ -3,7 +3,6 @@
 
 def num_questions_with_any_yes(customs_forms):
     count = 0
-
     for group in customs_forms:
         responses_per_person = [set(line) for line in group.splitlines()]
         one_yes_questions = set.union(*responses_per_person)
